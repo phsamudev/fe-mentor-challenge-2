@@ -116,6 +116,7 @@ input::placeholder {
 }
 
 button {
+    cursor: pointer;
     top: 0;
     right: 0;
     position: absolute;
@@ -125,6 +126,14 @@ button {
     height: 100%;
     border-radius: 100px;
     box-shadow: 0px 17px 27px -11px var(--desaturated-red);
+}
+
+button svg {
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover svg {
+    transform: translateX(12px) scale(1.5);
 }
 
 .desktop-logo {
